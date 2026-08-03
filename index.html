@@ -242,6 +242,7 @@
       background:#fff;
     }
     .sig-block{ page-break-inside:avoid; }
+    .quote-doc .quote-logo { width: 100%; height: auto; display: block; }
   }
   .quote-doc{
     font-family:Arial,sans-serif;
@@ -575,8 +576,8 @@ async function doPrint(){
   const doc = `
   <div class="quote-doc">
     <table class="head-row"><tr>
-      <td style="border:none">
-        <img src="${LOGO_URI}" alt="Greenline Associates" style="width:480px;max-width:100%;height:auto;display:block">
+      <td style="border:none; padding: 0;">
+        <img class="quote-logo" src="${LOGO_URI}" alt="Greenline Associates">
       </td>
     </tr></table>
 
